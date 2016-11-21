@@ -1,0 +1,92 @@
+.Outside {
+    margin: auto;
+    background: #66BB6A;
+}
+.Inside {
+    width: 450px;
+    height: auto;
+    margin: auto;
+    background: lightcyan;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.Title {
+    width: 360px;
+    height: 45px;
+    color: #66BB6A;
+    font-size: 30px;
+    font-weight: 800;
+    margin: auto auto 10px auto;
+}
+.Message {
+    width: 360px;
+    height: auto;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px auto 20px auto;
+}
+.Form {
+    width: 360px;
+    height: auto;
+    margin: auto;
+}
+.Text {
+    width: 360px;
+    height: auto;
+    font-size: 15px;
+    margin: auto auto 5px auto;
+}
+.Enter {
+    border: 0px;
+    width: 340px;
+    height: 45px;
+    font-size: 20px;
+    padding: 0px 10px;
+    margin: auto auto 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Name {
+    border: 0px;
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    padding: 0px 10px;
+    margin: auto 15px auto auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.NameText {
+    width: 170px;
+    height: auto;
+    padding: 0px;
+    font-size: 15px;
+    margin: auto auto 5px 0px;
+}
+.Button {
+    border: 0px;
+    color: white;
+    width: 360px;
+    height: 45px;
+    font-size: 20px;
+    margin: 10px auto 10px;
+    background-color: #66BB6A;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.TextButton {
+    border: 0px;
+    width: 360px;
+    color: #66BB6A;
+    font-size: 15px;
+    margin: auto auto 5px;
+    background-color: transparent;
+}
