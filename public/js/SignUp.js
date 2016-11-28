@@ -1,5 +1,5 @@
 /**
- * Created by david on 08/11/2016.
+ * Created by David on 08/11/2016.
  */
 
 var target = "localhost:2048/Main";
@@ -11,7 +11,7 @@ $(document).ready(function() {
         var err = false;
         // Email
         var email = $("#Email").val();
-        var firstName = $("#first").val();
+        var firstName = $("#First").val();
         var lastName = $("#Last").val();
         var pass = $("#Pass").val();
         // Email
@@ -23,14 +23,14 @@ $(document).ready(function() {
             err = true;
         }
         // Name
-        filter = /^[a-z]{1,10}$/;
+        filter = /^[a-zA-Z]{1,10}$/;
         if(filter.test(firstName)) {
             $("#FirstText").css('color', 'black');
         } else {
             $("#FirstText").css('color', '#FF2D2D');
             err = true;
         }
-        filter = /^[a-z']{2,10}$/;
+        filter = /^[a-zA-Z']{2,10}$/;
         if(filter.test(lastName)) {
             $("#LastText").css('color', 'black');
         } else {
@@ -62,8 +62,12 @@ $(document).ready(function() {
                 "lastName": lastName,
                 "pass": pass
             };
-            $.post(target + "/Signup", info, function(data) {
-                //
+            $.post(target + "/SignUp", info, function(data) {
+                if(data.states == "Success") {
+                    alert("Sign Up Successfully")
+                } else {
+                    alert("Sign Up Unsuccessfully")
+                }
             });
         }
     });
