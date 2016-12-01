@@ -1,45 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sign Up</title>
-    <link href="../css/Main.css" rel="stylesheet">
-    <script src="../js/angular.min.js"></script>
-    <script src="../js/jQuery-3.js"></script>
-    <script src="../js/SignUp.js"></script>
-</head>
-<body class="Outside">
-<div style="height: 20px"></div>
-<div class="Inside">
+<div ng-controller="SignCont" class="Inside">
     <form class="Form">
         <br>
         <p class="Title">Sign Up</p>
-        <p class="Message" id="Message">Please fix the errors highlighted in red. </p>
-        <p class="Text" id="EmailText">Your email address: </p>
-        <input class="Enter" id="Email" type="text" placeholder="Email Address">
+        <p class="Message">Please fix the errors highlighted in red. </p>
+        <p class="Text">Your email address: </p>
+        <input class="Enter" type="text" placeholder="Email Address" ng-model="data.email">
         <br>
         <table>
             <tr>
-                <td style="padding: 0px"><p class="NameText" id="FirstText">Your first name: </p></td>
-                <td style="padding: 0px"><p class="NameText" id="LastText">Your last name: </p></td>
+                <td style="padding: 0px"><p class="NameText">Your first name: </p></td>
+                <td style="padding: 0px"><p class="NameText">Your last name: </p></td>
             </tr>
             <tr>
-                <td style="padding: 0px"><input class="Name" id="First" type="text" placeholder="First Name"></td>
-                <td style="padding: 0px"><input class="Name" id="Last" type="text" placeholder="Last Name"></td>
+                <td style="padding: 0px"><input class="Name" type="text" placeholder="First Name" ng-model="data.name.first"></td>
+                <td style="padding: 0px"><input class="Name" type="text" placeholder="Last Name" ng-model="data.name.last"></td>
             </tr>
         </table>
         <br>
         <p class="Text" id="PassText">Your password: </p>
-        <input class="Enter" id="Pass" type="password" placeholder="Password">
+        <input class="Enter" id="Pass" type="password" placeholder="Password" ng-model="data.pass">
         <br>
         <p class="Text" id="PassConfText">Confirm your password: </p>
-        <input class="Enter" id="PassConf" type="password" placeholder="Password Confirm">
+        <input class="Enter" id="PassConf" type="password" placeholder="Password Confirm" ng-model="data.conf">
         <br>
-        <input class="Button" id="Button" type="button" value="Login">
+        <input class="Button" type="button" ng-click="sign()" value="Sign Up">
         <br>
-        <input class="TextButton" type="button" value="Already have one account?" onclick="location.href='../Login.html'">
+        <input class="TextButton" type="button" ng-click="goState('login')" value="Already have one account?">
         <br>
     </form>
 </div>
-</body>
-</html>

@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Lost Password</title>
-    <link href="../css/Main.css" rel="stylesheet">
-    <script src="../js/angular.min.js"></script>
-    <script src="../js/Login.js"></script>
-</head>
-<body class="Outside">
-<div style="height: 50px"></div>
-<div class="Inside">
+<div ng-controller="RetrCont" class="Inside">
     <form class="Form">
         <br>
         <p class="Title">Retrieve Password</p>
         <p class="Text">Please enter your email:</p>
-        <input class="Enter" type="text" placeholder="Email">
+        <input class="Enter" type="text" placeholder="Email" ng-model="data.email">
         <br>
-        <input class="Button" id="Login" type="button" value="Next">
+        <input class="Button" type="button" ng-click="retr()" value="Next">
         <br>
-        <input class="TextButton" type="button" value="Go to login in page." onclick="location.href='../Login.html'">
+        <input class="TextButton" type="button" ng-click="goState('login')" value="Go to login in page.">
         <br>
     </form>
 </div>
-</body>
-</html>

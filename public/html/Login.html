@@ -1,0 +1,16 @@
+<div ng-controller="LoginCont" class="Inside">
+    <form class="Form">
+        <br>
+        <p class="Title">Login In</p>
+        <input class="Enter" type="text" placeholder="Email" ng-model="data.email">
+        <br>
+        <input class="Enter" type="password" placeholder="Password" ng-model="data.pass">
+        <br>
+        <input class="Button" type="button" ng-click="login()" value="Login">
+        <br>
+        <input class="TextButton" type="button" ng-click="goState('retrieve')" value="Lost Your Password?">
+        <br>
+        <input class="TextButton" type="button" ng-click="goState('signup')" value="Doesn't have one account?">
+        <br>
+    </form>
+</div>

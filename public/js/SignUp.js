@@ -1,9 +1,7 @@
 /**
  * Created by David on 08/11/2016.
  */
-
 var target = "localhost:2048/Main";
-
 $(document).ready(function() {
     var errMes = $("#Message");
     errMes.hide();
